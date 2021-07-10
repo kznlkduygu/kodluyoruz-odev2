@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafta 2 Gun 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <button class="dataButton" onclick="fetchData()">Getir</button>
+        <!--Todo-->
+        <div id="filterClass" style="display: none;">
+            <div id="ageFilter">
+                <h5>Age Filter:</h5>
+                <input type="checkbox" class="Aktif" id="notMinor"/>
+            </div>
+            <div id="isActive">
+                <h5>Aktiflik Filtresi:</h5>
+                <input type="checkbox" id="true" />
+            </div>
+            <div id="name">
+                <h5>İsim Filtresi:</h5>
+                <input type="text" class="name" id="fname" name="fname" maxlength="1" placeholder="İsmin baş harfi" />
+            </div>
+            <button class="filterButton" onclick="filterData()" id="filterButton">Filtrele</button>
+        </div>
+        <ul class="list">
+
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
